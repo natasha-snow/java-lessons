@@ -11,6 +11,7 @@ public class Multidimensional {
 			System.out.println("Class " + row + ", Student " + column + ": " + info[row][column]);
 		}
 		System.out.print("");
-	} 
+	}
+	
 }
 }
