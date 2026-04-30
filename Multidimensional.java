@@ -9,5 +9,6 @@ public class Multidimensional {
 		for(int column = 0; column < info[row].length; column++) {
 			System.out.print("Class " + row + ",Student " + column + ": " + info[row][column]);
 		}
-	}
+		System.out.print("");
+	} 
 }
