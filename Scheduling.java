@@ -13,15 +13,21 @@ public class Scheduling {
 				
 		LocalDate waiting = LocalDate.now();
 		Period current = Period.between(waiting, day);
-		System.out.println("Waiting Period: " + current.getYears() + "years " + current.getMonths() + "months " + current.getDays() + "days");
+		System.out.println("Waiting Period: " + current.getYears() + "years, " + current.getMonths() + "months " + current.getDays() + "days");
 
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMM-yyyy" + " " + time);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMM-yyyy");
 		String formatted = day.format(formatter);
-		System.out.println("Prefered format: " + formatted);
+		System.out.println("Prefered format: " + formatted + " at " + time);
 		
 		String text = "20-12-2026 18:45";
 		DateTimeFormatter formatterr = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
 		LocalDateTime second = LocalDateTime.parse(text, formatterr);
-		System.out.println("Next event: " + second);
+		System.out.println("Year-end party: " + second);
+		
+		if(day.isBefore(second)) {
+			System.out.print("Next event: " + day.format(formatter));
+		} else {
+			System.out.print("Next event: " + second.format(formatter));
+		}
 	}
 }
