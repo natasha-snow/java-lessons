@@ -8,7 +8,7 @@ public class MainCalculator {
 		System.out.println("Total sum: " + c.sum(c.add(25, 20) + c.add(40, 80)));
 		
 		Counter.setCounter();
-		Counter.reset();
+		// Counter.reset();
 		Counter.getInstance();
 	}
 }

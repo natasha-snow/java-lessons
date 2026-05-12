@@ -10,9 +10,7 @@ public class Counter {
 	}
 	
 	static void reset() {
-		while(count < 100) {
-			break;
-		}
+		count = 0;
 	}
 	
 	static void getInstance() {
