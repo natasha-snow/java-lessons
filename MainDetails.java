@@ -1,7 +1,7 @@
 public class MainDetails {
 	public static void main(String[] args) {
 		StudentDetails student1 = new StudentDetails();
-		student1.StudentDetails("Natasha", 25, 65.83);
+		student1.StudentDetails("Natasha", 25, 65.89);
 		StudentDetails student2 = new StudentDetails();
 		student2.StudentDetails("Isabella", 24, 89.76);
 		

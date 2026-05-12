@@ -24,10 +24,10 @@ public class Scheduling {
 		LocalDateTime second = LocalDateTime.parse(text, formatterr);
 		System.out.println("Year-end party: " + second);
 		
-		if(day.isBefore(second)) {
-			System.out.print("Next event: " + day.format(formatter));
-		} else {
+		if(second.equals(day)) {
 			System.out.print("Next event: " + second.format(formatter));
+		} else {
+			System.out.print("Next event: " + day.format(formatter));
 		}
 	}
 }
