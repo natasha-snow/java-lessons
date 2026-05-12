@@ -1,7 +1,7 @@
 public class Counter {
 	static int count;
 	
-	Counter() {
+	static void setCounter() {
 		count++;
 	}
 	
@@ -10,7 +10,7 @@ public class Counter {
 	}
 	
 	static void reset() {
-		while(count >= 100) {
+		while(count < 100) {
 			break;
 		}
 	}
